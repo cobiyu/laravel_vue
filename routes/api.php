@@ -17,6 +17,6 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-Route::get('test' ,function (){
-   return ('fdsafda');
+Route::get('/{root_route}' ,function ($root_route){
+   return ($root_route);
 });

@@ -11,5 +11,9 @@
 |
 */
 
-Route::get('/{any}', 'FrontController@index')->where('any', '.*');
+Route::get('/404', function() {
+    throw new \Symfony\Component\HttpKernel\Exception\NotFoundHttpException();
+});
+
+Route::get('/{root_route}/{any?}', 'FrontController@index')->where('any', '.*');
 

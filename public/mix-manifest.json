@@ -1,4 +1,8 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/service/app.js": "/js/service/app.js",
+    "/css/service/app.css": "/css/service/app.css",
+    "/css/myinfo/app.css": "/css/myinfo/app.css",
+    "/js/myinfo/app.js": "/js/myinfo/app.js",
+    "/0.00e647eac73b25f3d87e.hot-update.js": "/0.00e647eac73b25f3d87e.hot-update.js",
+    "/1.00e647eac73b25f3d87e.hot-update.js": "/1.00e647eac73b25f3d87e.hot-update.js"
 }

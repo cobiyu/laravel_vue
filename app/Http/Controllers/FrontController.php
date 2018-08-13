@@ -11,9 +11,9 @@ class FrontController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($root_route)
     {
-        return view('vue');
+        return view($root_route);
     }
 
     /**

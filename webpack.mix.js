@@ -11,7 +11,10 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.js('resources/assets/js/service/app.js', 'public/js/service')
+   .sass('resources/assets/sass/service/app.scss', 'public/css/service');
+
+mix.js('resources/assets/js/myinfo/app.js', 'public/js/myinfo')
+    .sass('resources/assets/sass/myinfo/app.scss', 'public/css/myinfo');
 
 mix.browserSync('localhost:8000');
