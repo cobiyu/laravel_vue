@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\GabiaDto;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class FrontController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * @param \App\Repositories\Contact $contact
      * @return \Illuminate\Http\Response
      */
-    public function index($root_route)
+    public function index(Request $request, SessionInterface $session, GabiaDto $contact, $root_route)
     {
         return view($root_route);
     }

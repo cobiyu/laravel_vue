@@ -17,6 +17,4 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-Route::get('/{root_route}' ,function ($root_route){
-   return ($root_route);
-});
+Route::get('/{root_route}', 'Controller@index');
