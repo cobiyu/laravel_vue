@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\GabiaDto;
+use App\Dto\common\GabiaDto;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
@@ -10,11 +10,14 @@ class FrontController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * @param \App\Repositories\Contact $contact
+     * @param SessionInterface $session
+     * @param \App\Dto\GabiaUser\TestDto $user
+     * @param string $root_route
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request, SessionInterface $session, GabiaDto $contact, $root_route)
+    public function index(SessionInterface $session, GabiaDto $user, string $root_route)
     {
+        dd($user);
         return view($root_route);
     }
 
